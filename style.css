@@ -1,0 +1,135 @@
+/*背景&菜单栏*/
+a {
+    text-decoration: dashed;
+    color: rgb(116, 114, 114);
+    font-size: 20px;
+}
+
+a:hover {
+    color: #E64A19;
+    transition: 0.4s;
+}
+
+#nav_box {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+body {
+    margin: 0;
+    background-image: url(bg-1.jpg); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#nav_box li {
+    margin: 0;
+    font-size: 20px;
+    padding: 0 5px;
+    color: rgb(116, 114, 114);
+}
+
+/*阅读进度条*/
+#content_progress {
+    /* Positioning */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    color: red;
+}
+
+#content_progress::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+#content_progress::-webkit-progress-value {
+    background-color: red;
+}
+
+#content_progress::-moz-progress-bar {
+    background-color: red;
+}
+
+/*标题&简介*/
+@font-face {
+    font-family: 腾讯体;
+    src: url(http://dogkun.ml/疼逊体.ttf);
+}
+
+#title {
+    font-size: 100px;
+    font-family: 腾讯体;
+    margin: 0 0 0 0px;
+}
+
+#jianjie {
+    font-family: 腾讯体;
+    margin: 0 0 0 50px;
+}
+
+.ren-box{
+    border-radius: 10px;
+    background-color: rgb(172, 45, 45);
+    height: 100px;
+    margin: 10px;
+    width: 250px;
+    box-shadow:0px 1.50px 10px -1.50px #000;
+}
+
+.ren-box img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin: 10px 10px 0 10px;
+}
+
+.ren-box span{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ren-box .ren-box-1 p{
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    font-family: 腾讯体;
+}
+
+.ren-box .ren-box-2 p{
+    font-size: 10px;
+    color: #EEE;
+    font-family: 腾讯体;
+    margin: 0 0 0 10px;
+}
+
+#jiaru{
+    text-align: center;
+    font-family: 腾讯体;
+    font-size: 50px;
+}
+
+.jiaruform{
+    margin: auto;
+    display: flex;
+
+}
+
+.jiaruform p{
+    font-size: 25px;
+    margin: 0;
+}
+
+.jiaruform input{
+    height: 20px;
+    border-radius: 5px;
+}

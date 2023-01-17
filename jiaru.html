@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>共享工作室-加入</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./kico.css">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1" />
+    <script src="./kico.css"></script>
+    <link rel="icon" href="./ico.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #form {
+            font-family: 腾讯体;
+            text-align: center;
+        }
+
+        #nameform {
+            font-family: 腾讯体;
+            height: 42px;
+            margin: 0 0 10px 0;
+            width: 235px;
+            padding: .5em;
+            color: inherit;
+            border-radius: var(--radius);
+            border: var(--border-width) var(--gray) solid;
+            min-height: calc(2.5em + calc(var(--border-width) * 2));
+        }
+
+        .title {
+            margin: 0;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            font-family: 腾讯体;
+        }
+    </style>
+</head>
+
+<body>
+    <progress id="content_progress" value="0"></progress>
+    <ul id="nav_box">
+        <li>
+            <a href="index.html">首页</a>
+        </li>
+        <li>
+            <a target="_blank" href="poe.html">人员</a>
+        </li>
+        <li title="bbs">
+            <a target="_blank" style="padding: 0 20px 0 0;" href="http://n8gmy4.azds7.me/">论坛</a>
+        </li>
+    </ul>
+    <p class="title">加入</p>
+    <div id="form" style="text-align:center;">
+        <form action="https://api.mohuajz.top/mail/api.php">
+            <input readonly="readonly" name="adress" id="nameform" value="JPWP114514@163.com"/>
+            <input id="nameform" name="tittle" type="text" placeholder="如何称呼？">
+            <textarea name="content" placeholder="简单介绍一下吧，最好加上联系方式" style="width: 480px;margin: 0 auto;"></textarea>
+            <input type="submit" value="提交" class="btn" style="width: 235px;height: 40px;margin: 10px 0;;background-color: var(--red);">
+        </form>
+    </div>
+</body>
+
+</html>
